@@ -1,0 +1,80 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #FFE600;
+}
+
+header, section {
+  padding: 50px;
+}
+
+header {
+  background-color: #FFE600;
+  color: #000000;
+}
+
+.section-one {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.section-one a {
+  color: #FFE600;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.section-one .btn {
+  display: inline-block;
+  background-color: #FFE600;
+  color: #000000;
+  padding: 15px 30px;
+  margin: 20px 20px 0 0;
+  text-decoration: none;
+}
+
+.section-one .btn:hover {
+  opacity: 0.6;
+}
+
+.section-two a {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.section-two .btn {
+  display: inline-block;
+  background-color: #000000;
+  color: #FFE600;
+  padding: 15px 30px;
+  margin: 20px 20px 0 0;
+  text-decoration: none;
+}
+
+.section-two .btn:hover {
+  opacity: 0.6;
+}
