@@ -1,38 +1,41 @@
+html {
+  font-size: 0.9rem;
+}
+
 body {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 21px;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   margin: 0;
 }
 
 .container {
-  width: 570px;
+  max-width: 570px;
   margin: 0 auto;
+  padding: 0 1em;
 }
 
 h1,
 h2 {
-  font-weight: 300; 
+  font-weight: 300;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 2.625rem;
   margin-top: 0;
   border-top: solid 1px #c4c4c4;
   border-bottom: solid 1px #c4c4c4;
-  
-  padding: 20px 0;
-  margin-bottom: 20px;
+  padding: 0.5em 0;
+  margin-bottom: 0.5em;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 900;
   margin-bottom: 0;
 }
@@ -42,7 +45,7 @@ p {
 }
 
 a {
-  color: #99D930;
+  color: #99d930;
   font-weight: 900;
 }
 
@@ -52,13 +55,23 @@ a:focus {
 }
 
 .small-text {
-  font-size: 16px;
-  margin-top: 20px;
-} 
+  font-size: 1rem;
+  margin-top: 0.3125em;
+}
+
+img {
+  max-width: 100%;
+}
 
 header,
 section {
-  padding: 100px 0;
+  padding: 6.25em 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .inverse {
@@ -70,14 +83,14 @@ section {
   display: inline-block;
   color: #252525;
   text-decoration: none;
-  background: #99D930;
-  margin-top: 25px;
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
-  padding: 15px 45px;
+  font-size: 1.125rem;
+  padding: 0.625em 1.5625em;
+  margin-top: 1.125em;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  background-color: #99d930;
 }
 
 .btn:hover,
@@ -88,4 +101,81 @@ section {
 
 .bold-text {
   font-weight: 900;
+  color: #99d930;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.3125rem;
+  }
+}
+
+@media (min-width: 725px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main section {
+    width: 50%;
+  }
+
+  .bg-green {
+    background-color: #99d930;
+  }
+
+  .bg-green h2 {
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+
+  .bg-green,
+  .bg-green .bold-text,
+  .bg-green a {
+    color: currentColor;
+  }
+
+  .bg-green a:hover,
+  .bg-green a:focus {
+    color: #252525;
+  }
+  .bg-green .btn {
+    background-color: #252525;
+    color: #fff;
+  }
+
+  .bg-green .btn:hover {
+    background-color: #fff;
+    color: #252525;
+  }
+
+  .portfolio {
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    color: #fff;
+    min-height: 100vh;
+  }
+
+  .porfolio .container {
+    max-width: 1200px;
+  }
+
+  .portfolio .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .portfolio-item {
+    margin: 2em;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+  }
 }
